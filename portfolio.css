@@ -145,20 +145,20 @@ nav {
 }
 
 .div-pattern-two-img {
-    width:18rem;
-    height:18rem;
+    width:15rem;
+    height:15rem;
     position: relative;
     left: 20rem;
     top: 1rem;
-    box-shadow: 0 1px 1px 1px rgb(131, 59, 125);
-    border-radius: 2px;
+    box-shadow: 0 1px 1px 1px rgb(133, 119, 40);
+    border-radius: 5px;
 }
 
 .div-pattern-two-img img {
-    width:18rem;
-    height:18rem;
-    opacity: 70%;
-    border-radius: 4px;
+    width:15rem;
+    height:15rem;
+    opacity: 40%;
+    border-radius: 5px;
 
 }
 
