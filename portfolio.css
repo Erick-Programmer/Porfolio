@@ -56,12 +56,13 @@ nav {
 /* first section*/
 
 .divide {
-    clip-path: polygon(1% 5%, 100% 1%, 100% 10%, 73% 97%, 10% 100%);
+    clip-path: polygon(-10% -10%, 100% 1%, 100% 10%, 73% 97%, 10% 100%);
     background-color:  rgb(87, 10, 87);
     width: 100%;
-    height: 2px;
+    height: 10px;
     position: relative;
     top: 10px;
+    opacity: 30%;
 
 }
 
@@ -93,7 +94,7 @@ nav {
     transition: all 2s ease;
 }
 
-.title::content {
+.title::backdrop {
     position: relative; 
     border: 1px solid rgb(71, 20, 71);
     text-align: center;
@@ -113,7 +114,7 @@ nav {
     
 }
 
-.description::content {
+.description::backdrop {
     position: relative; 
     text-align: center;
     margin: 10px;
@@ -126,11 +127,13 @@ nav {
 /* second section*/
 
 .divide-two {
+    clip-path: polygon(-20% -10%, 100% 1%, 100% 10%, 40% 97%, 1% 50%);
     background-color:  rgb(87, 10, 87);
     width: 100%;
-    height: 5px;
+    height: 20px;
     position: relative;
     top: 10px;
+    opacity: 10%;
 }
 
 .div-pattern-two {
@@ -157,7 +160,7 @@ nav {
 .div-pattern-two-img img {
     width:15rem;
     height:15rem;
-    opacity: 40%;
+    opacity: 50%;
     border-radius: 5px;
 
 }
@@ -215,12 +218,13 @@ nav {
 /* third section*/
 
 .divide-three {
-    clip-path: polygon(1% 5%, 90% 10%, 100% 10%, 73% 97%, 10% 100%);
+    clip-path: polygon(100% -100%, 100% 1%, 100% 10%, 40% 97%, 1% 100%);
     background-color:  rgb(87, 10, 87);
     width: 100%;
-    height: 5px;
+    height: 20px;
     position: relative;
     top: 10px;
+    opacity: 10%;;
 
 }
 
