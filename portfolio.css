@@ -63,7 +63,9 @@ nav {
     top: 10px;
     opacity: 30%;
 
+
 }
+
 
 .div-one {
     display: flex;
@@ -76,56 +78,57 @@ nav {
     height: 750px;
 }
 
-.based-one {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; 
-    padding-bottom: 20px;
+@media (min-width: 900px) {
+    .based-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%; 
+        padding-bottom: 20px;
+    }
+
+    .title {
+        position: relative; 
+        text-align: center;
+        opacity: 100%;
+        margin: 10px;
+        transition: all 2s ease;
+        color: #415A77;
+    }
+
+    .title::backdrop {
+        position: relative; 
+        text-align: center;
+        margin: 10px;
+    }
+
+    .title h1 {
+        font-size: 40px;
+        color: #415A77; 
+
+    }
+
+    .description {
+        position: relative; 
+        text-align: center;
+        transition: all 2s ease;
+
+        
+    }
+
+    .description::backdrop {
+        position: relative; 
+        text-align: center;
+        margin: 10px;
+    }
+
+    .description h1 {
+        color: #778DA9; 
+        font-size: 40px;
+
 }
 
-.title {
-    position: relative; 
-    text-align: center;
-    opacity: 100%;
-    margin: 10px;
-    transition: all 2s ease;
-    color: #415A77;
-    
 }
-
-.title::backdrop {
-    position: relative; 
-    text-align: center;
-    margin: 10px;
-}
-
-.title h1 {
-    font-size: 50px;
-    color: #415A77; 
-
-}
-
-.description {
-    position: relative; 
-    text-align: center;
-    transition: all 2s ease;
-
-    
-}
-
-.description::backdrop {
-    position: relative; 
-    text-align: center;
-    margin: 10px;
-}
-
-.description h1 {
-    color: #778DA9; 
-    font-size: 50px;
-
-}
-
 .one {
     /*clip-path: polygon(1% 2%, 100% 1%, 100% 100%, 73% 97%, 0 100%);*/
     background-color: #0D1B2A;
@@ -166,7 +169,6 @@ nav {
     position: relative;
     top: 10px;
     opacity: 10%;
-    border:1px solid red;
 }
 
 .based-two {
@@ -417,65 +419,159 @@ nav {
     box-shadow: 0px 2px 10px 3px #778DA9;
 }
 
+/*for desktop*/
+@media (max-width: 900px) and (min-width: 769px) {
+    .div-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top:5px;
+        background-color: #0D1B2A;
+        max-width: 100%; 
+        height: 750px;
+        
+    }
 
-/*four-section*/
+    .based-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%; 
 
-/*.divide-four {
-    clip-path: polygon(100% -100%, 100% 1%, 20% 50%, 40% 97%, 1% 100%);
-    background-color: #415A77;
-    width: 100%;
-    height: 40px;
-    position: relative;
-    opacity: 10%;;
-    padding: 10px;
+    }
 
-}*/
+    .title {
+        position: relative; 
+        text-align: center;
+        opacity: 100%;
+        margin: 10px;
+        transition: all 2s ease;
+        color: #415A77;
+    }
 
-/*.based-four {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; 
-    height: 200px;
+    .title::backdrop {
+        position: relative; 
+        text-align: center;
+        margin: 10px;
+    }
+
+    .title h1 {
+        font-size: 35px;
+        color: #415A77; 
+
+    }
+
+    .description {
+        position: relative; 
+        text-align: center;
+        transition: all 2s ease;
+        
+    }
+
+    .description::backdrop {
+        position: relative; 
+        text-align: center;
+        margin: 10px;
+    }
+
+    .description h1 {
+        color: #778DA9; 
+        font-size: 35px;
+    }
+
+    .one {
+        /*clip-path: polygon(1% 2%, 100% 1%, 100% 100%, 73% 97%, 0 100%);*/
+        background-color: #0D1B2A;
+        display: flex;
+        justify-content: center;
+        width: 100%; 
+        height: 140px;
+        padding-top: 200px;
+    }
+
+    .one-imgs {
+        /*clip-path: polygon(1% 2%, 100% 1%, 100% 100%, 73% 97%, 0 100%);*/
+        width: 100px;
+        height: 100px; 
+        position: relative;
+        top: 50px;
+    }
+
+    .one-imgs img {
+        /*clip-path: polygon(1% 2%, 100% 1%, 100% 100%, 73% 97%, 0 100%);*/
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        opacity: 50%;
+        box-shadow: 0 0 1px 1px #778DA9;
+        user-select: none;
+    }
+} 
+
+
+
+/*para tablet*/
+@media (max-width: 768px) {
+    .div-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top:5px;
+        background-color: #0D1B2A;
+        max-width: 100%; 
+        height: 750px;
+        
+    }
+
+    .based-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 100%; 
+        padding-bottom: 20px;
+
+    }
+
+    .title {
+        position: relative; 
+        text-align: center;
+        opacity: 100%;
+        margin: 10px;
+        transition: all 2s ease;
+        color: #415A77;
+    }
+
+    .title::backdrop {
+        position: relative; 
+        text-align: center;
+        margin: 10px;
+    }
+
+    .title h1 {
+        font-size: 35px;
+        color: #415A77; 
+
+    }
+
+    .description {
+        position: relative; 
+        text-align: center;
+        transition: all 2s ease;
+        
+    }
+
+    .description::backdrop {
+        position: relative; 
+        text-align: center;
+        margin: 10px;
+    }
+
+    .description h1 {
+        color: #778DA9; 
+        font-size: 30px;
+    }
+
 }
-
-#contacts {
-    display: flex;
-    justify-content: center;
-    height: 10px;
-    border-bottom: 1px solid #1B263B;
-    height: 30px;
-    position: relative;
- 
-}
-
-#contacts h1 {
-    color: #415A77; 
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-} */
-
-/*.div-four {
-    /*clip-path: polygon(1% 2%, 100% 1%, 100% 100%, 73% 97%, 0 100%);
-    background-color: #0D1B2A;
-    display: flex;
-    justify-content: space-around;
-    width: 100%; 
-    height: 140px;
-    padding-top: 20px;
-}
-
-.div-four-imgs {
-    clip-path: polygon(1% 2%, 100% 1%, 100% 100%, 73% 97%, 0 100%);
-    width: 100px;
-    height: 100px; 
-}
-
-.div-four-imgs img {
-    /*clip-path: polygon(1% 2%, 100% 1%, 100% 100%, 73% 97%, 0 100%);
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
-    opacity: 30%;
-}*/
-
