@@ -158,7 +158,7 @@
         justify-content: center;
         align-items: center;
         max-width: 100%; 
-        height: 50px;
+        height: 20px;
     }
     
     
@@ -184,8 +184,7 @@
         flex-direction: column;
         background-color: #0D1B2A;
         max-width: 100%; 
-        height: 700px;
-
+        height: 900px;
 
     }
     
@@ -198,7 +197,7 @@
         border:1px solid #415A77;
         opacity: 65%;
         position: relative;
-        left: 10px;
+        left: 0px;
      
     }
     
@@ -224,6 +223,8 @@
         font-size: 15px;
         text-justify: center;
         line-height: 2.4em;
+        position: relative;
+        left: -18px;
     }
 
         
@@ -252,8 +253,7 @@
         display: flex;
         justify-content: center;
         height: 10px;
-        border-bottom: 1px solid #1B263B;
-    
+        border-bottom: 1px solid #1B263B;    
     }
 
     #projects h1 {
